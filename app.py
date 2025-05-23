@@ -94,7 +94,7 @@ if not st.session_state.finalizado:
                 st.session_state.finalizado = True
             else:
                 st.session_state.form_id += 1
-                st.experimental_rerun()
+                st.rerun()
 
 # Generar PDF y mostrar resumen
 if st.session_state.finalizado:
